@@ -52,5 +52,8 @@ public class UserServiceImpl implements UserService {
             throw new RuntimeException("Booking not found with id: " + id);
         }
     }
+    public void hi(){
+        System.out.println("hi");
+    }
 
 }
