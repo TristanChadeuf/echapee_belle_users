@@ -1,4 +1,6 @@
-/home/user/Documents/SPRING-BOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/UsersApplication.java
-/home/user/Documents/SPRING-BOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/dao/UserDao.java
-/home/user/Documents/SPRING-BOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/model/User.java
-/home/user/Documents/SPRING-BOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/web/controller/UsersController.java
+/home/user/Documents/SPRINGBOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/UsersApplication.java
+/home/user/Documents/SPRINGBOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/dao/UserDao.java
+/home/user/Documents/SPRINGBOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/model/User.java
+/home/user/Documents/SPRINGBOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/services/UserService.java
+/home/user/Documents/SPRINGBOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/services/UserServiceImpl.java
+/home/user/Documents/SPRINGBOOT/echapee_belle_users/echapee_belle_users/users/src/main/java/com/echappeebelle/users/web/controller/UsersController.java

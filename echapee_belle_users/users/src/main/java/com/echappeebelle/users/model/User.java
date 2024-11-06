@@ -18,7 +18,7 @@ import jakarta.persistence.*;
         private String license_obtention_date;
         private int age;
 
-        //CONSTRUCTOR*******************************************************************************************************
+        //CONSTRUCTOR***************************************************************************************************
 
         public User(int id,
                     String name,
