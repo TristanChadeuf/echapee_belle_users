@@ -1,10 +1,10 @@
 
 package com.echappeebelle.users.model;
+
 import jakarta.persistence.*;
 
 
-
-    //@JsonFilter("monFiltreDynamique")
+//@JsonFilter("monFiltreDynamique")
     @Entity
     public class User {
         @Id

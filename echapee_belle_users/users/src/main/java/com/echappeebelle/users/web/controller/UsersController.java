@@ -30,28 +30,15 @@ public class UsersController {
     //ROUTE USERS ID****************************************************************************************************
 
     @GetMapping(value = "/user/{id}")
-    public User afficherUnProduit(@PathVariable Long id) {
+    public User afficherUnProduit(@PathVariable int id) {
         return userDao.findById(id).orElse(null);
     }
 
     //ROUTE CREATE USER*************************************************************************************************
-    @PostMapping(value="/user/{id}")
-    public User ajouterUnClient(@RequestBody User user, @PathVariable int id) {
-        try{
-            RestTemplate restTemplate = new RestTemplate();
-            ResponseEntity<Boolean> isValid = restTemplate.getForEntity("http://127.0.0.1:8081/licenses/" + user.getLicense_number(),
-                    Boolean.class, user.getLicense_number());
-
-            if (Boolean.TRUE.equals(isValid.getBody())) {
-                user.setId(id);
+    @PostMapping(value="/user")
+    public User ajouterUnClient(@RequestBody User user) {
                 return userDao.save(user);
-            } else {
-                throw new Exception("permis not valid");
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return null;
-        }
+
     }
     //ROUTE UPDATE USER*************************************************************************************************
     @PutMapping(value = "/user/{id}")
@@ -62,7 +49,7 @@ public class UsersController {
 
     //ROUTE DELETE USER*************************************************************************************************
     @DeleteMapping(value = "/user/{id}")
-    public void supprimerUnClient(@PathVariable Long id) {
+    public void supprimerUnClient(@PathVariable int id) {
         userDao.deleteById(id);
     }
 }
