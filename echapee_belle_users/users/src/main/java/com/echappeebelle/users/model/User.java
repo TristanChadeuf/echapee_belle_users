@@ -12,17 +12,17 @@ import jakarta.persistence.*;
 
         private int id;
         private String name;
-        private String first_name;
-        private String birth_date;
-        private String license_number;
-        private String license_obtention_date;
+        private String firstName;
+        private String birthDate;
+        private String licenseNumber;
+        private String licenseObtentionDate;
         private int age;
 
         //CONSTRUCTOR***************************************************************************************************
 
         public User(int id,
                     String name,
-                    String first_name,
+                    String firstName,
                     String birth_date,
                     String license_number,
                     String license_obtention_date,
@@ -30,15 +30,15 @@ import jakarta.persistence.*;
 
             this.id = id;
 
-            this.first_name = first_name;
+            this.firstName = firstName;
 
             this.name = name;
 
-            this.birth_date = birth_date;
+            this.birthDate = birth_date;
 
-            this.license_number = license_number;
+            this.licenseNumber = license_number;
 
-            this.license_obtention_date = license_obtention_date;
+            this.licenseObtentionDate = license_obtention_date;
 
             this.age = age;
 
@@ -62,11 +62,11 @@ import jakarta.persistence.*;
         //GETTER SETTER PRENOM *****************************************************************************************
 
         public String getFirst_name() {
-            return first_name;
+            return firstName;
         }
 
         public void setFirst_name(String first_name) {
-            this.first_name = first_name;
+            this.firstName = first_name;
         }
         //GETTER SETTER NOM*********************************************************************************************
 
@@ -80,27 +80,27 @@ import jakarta.persistence.*;
         //GETTER SETTER DATE NAISSANCE**********************************************************************************
 
         public String getBirth_date() {
-            return birth_date;
+            return birthDate;
         }
 
         public void setBirth_date(String birth_date) {
-            this.birth_date = birth_date;
+            this.birthDate = birth_date;
         }
         //GETTER SETTER LICENSE NUMBER**********************************************************************************
 
         public String getLicense_number() {
-            return license_number;
+            return licenseNumber;
         }
 
         public void setLicense_number(String license_number) {
-            this.license_number = license_number;
+            this.licenseNumber = license_number;
         }
         //GETTER SETTER LICENSE NUMBER**********************************************************************************
         public String getLicense_obtention_date() {
-            return license_obtention_date;
+            return licenseObtentionDate;
         }
         public void setLicense_obtention_date(String license_obtention_date) {
-            this.license_obtention_date = license_obtention_date;
+            this.licenseObtentionDate = license_obtention_date;
         }
         //GETTER SETTER AGE*********************************************************************************************
         public int getAge() {
